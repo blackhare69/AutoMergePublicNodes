@@ -1,4 +1,12 @@
 proxies:
+- name: 🇯🇵189917 | ⚡️Telegram = t.me/S...
+  password: my_super_password_123
+  port: 5443
+  server: 138.2.21.246
+  skip-cert-verify: false
+  sni: open.2ml.cc.cd
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: '🇮🇹[www.v2nodes.com] vless-IT-2... #1'
   network: ws
@@ -194,12 +202,3 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  name: '🇯🇵 日本 | JPN #1'
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 2060
-  server: rb.mangshe.xyz
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  tls: false
-  type: hysteria2

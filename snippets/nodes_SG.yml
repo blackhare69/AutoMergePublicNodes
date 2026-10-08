@@ -1,11 +1,10 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #2'
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1591...
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
   server: 13.229.58.5
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬[www.v2nodes.com] ss-SG-1581...
   password: 9epp3o9ng8ej59uv
@@ -99,10 +98,23 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #3'
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  port: 35601
-  server: gw.lydwan.com
-  type: ss
+- name: 🇸🇬 新加坡 | SGP 2
+  network: ws
+  password: trojan
+  port: 8443
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: longwanghen.pages.dev
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: longwanghen.pages.dev
+    path: /
+- name: '🇸🇬 新加坡 | SGP #2'
+  password: trojan
+  port: 8443
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: longwanghen.pages.dev
+  type: trojan

@@ -240,12 +240,11 @@ proxies:
   server: 45.149.114.171
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇰🇷 韩国 | KOR #2'
+  name: 🇰🇷[www.v2nodes.com] ss-KR-1591...
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
   server: 43.201.250.101
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 🇰🇷[www.v2nodes.com] ss-KR-1580...
   password: ac9c0a7b
@@ -289,12 +288,11 @@ proxies:
   server: 154.46.31.106
   type: ss
 - cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #4'
+  name: 🇷🇺[www.v2nodes.com] ss-RU-1591...
   password: bdb313adf74c2ede
   port: 20880
   server: 46.17.45.31
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1163...
   password: VVlAff77CnAU43Aoc5j15Y
@@ -302,12 +300,11 @@ proxies:
   server: 90.156.203.62
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #2'
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1591...
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
   server: 13.229.58.5
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬[www.v2nodes.com] ss-SG-1581...
   password: 9epp3o9ng8ej59uv
@@ -735,7 +732,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 🇺🇸 美国 | USA 8
+  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #2'
   network: ws
   password: humanity
   port: 443
@@ -743,7 +740,6 @@ proxies:
   skip-cert-verify: true
   sni: www.volumerOot.coM.
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: www.volumerOot.coM.
@@ -1099,78 +1095,52 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 | USA 6
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: feb7fa9:154948
-    mode: tls
-  port: 2377
-  server: 88.210.36.107
+- cipher: aes-256-cfb
+  name: 🇫🇷FR_1|2.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 15.237.53.180
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_2|3.6MB/s
+  password: amazonskr05
   port: 443
-  server: 47.243.65.243
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
+  server: 3.67.197.81
+  type: ss
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-    path: /ws-vmess
+- cipher: aes-256-cfb
+  name: 🇫🇷FR_2|2.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.36.178.160
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #1'
+  password: amazonskr05
+  port: 443
+  server: 3.75.231.76
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 23026
-  server: 47.244.120.197
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '🇩🇪 德国 | DEU #5'
+  network: http
+  port: 43462
+  server: 5.75.204.152
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    path: /arki
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #5'
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #6'
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki
+  uuid: 38dd079f-b778-44cf-8532-574c6ebc24d4
 - alpn:
   - ''
   alterId: 0
@@ -1178,22 +1148,22 @@ proxies:
   http-opts:
     headers:
       Host:
-      - down-cdn.dingtalk.com
+      - sjskendn.dingtalk.com
     method: GET
     path:
     - /x
-  name: '🇭🇰 香港 | HKG #7'
+  name: '🇭🇰 香港 | HKG #1'
   network: http
-  port: 9999
-  server: 8.217.230.196
+  port: 800
+  server: 47.86.167.194
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 02dc4f5b-b87d-410d-b9d5-0c6f921d92f8
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #8'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
   server: ex1ogt73nzpqkac2.v.3dns.vip
@@ -1206,24 +1176,29 @@ proxies:
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
+- alpn:
+  - ''
+  alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #9'
-  network: ws
-  port: 443
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /x
+  name: '🇭🇰 香港 | HKG #3'
+  network: http
+  port: 9999
+  server: 8.217.230.196
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    path: /ws-vmess
+  uuid: 02dc4f5b-b87d-410d-b9d5-0c6f921d92f8
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #10'
+  name: '🇭🇰 香港 | HKG #4'
   network: ws
   port: 443
   server: 93ucrn4i0pffuabk.v.3dns.vip
@@ -1237,6 +1212,54 @@ proxies:
     headers:
       Host: 93ucrn4i0pffuabk.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #5'
+  network: ws
+  port: 443
+  server: 47.243.65.243
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #6'
+  network: ws
+  port: 443
+  server: 47.243.153.153
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #7'
+  network: ws
+  port: 443
+  server: 8.217.13.103
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    path: /ws-vmess
 - cipher: aes-256-gcm
   name: '🇷🇺 俄罗斯 | RUS #1'
   password: 8ad9d72a5571df86
@@ -1244,67 +1267,23 @@ proxies:
   server: 176.32.39.52
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  password: 4938e975724d0ed1
-  port: 20880
-  server: 194.87.196.13
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #3'
-  password: 895b4b796a357570
-  port: 20880
-  server: 46.17.41.166
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #3'
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  port: 35601
-  server: gw.lydwan.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 | USA 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
-    mode: tls
-  port: 2377
-  server: 134.195.101.119
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #1'
-  password: amazonskr05
-  port: 443
-  server: 34.228.79.192
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #2'
-  password: amazonskr05
-  port: 443
-  server: 54.221.120.243
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 | USA 5
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: "(Telegramð\x9F\x87¨ð\x9F\x87³ @WangCai2)f6e348d:70852"
-    mode: tls
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-  udp: true
-- name: '🇺🇸 美国 | USA #4'
-  password: humanity
-  port: 443
+- name: 🇸🇬 新加坡 | SGP 2
+  network: ws
+  password: trojan
+  port: 8443
   server: 104.18.35.86
   skip-cert-verify: true
-  sni: www.volumerOot.coM.
+  sni: longwanghen.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: longwanghen.pages.dev
+    path: /
+- name: '🇸🇬 新加坡 | SGP #2'
+  password: trojan
+  port: 8443
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: longwanghen.pages.dev
   type: trojan
